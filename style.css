@@ -1,0 +1,63 @@
+body {
+	background-color: rgb(228, 228, 228);
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 21px;
+}
+
+p {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid; 
+	grid-auto-columns: 1fr; 
+	grid-template-columns: 0.3fr 1fr; 
+	grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+		"photo contacts"
+		"aboutMe aboutMe"
+		"skills skills"
+		"education education"
+}
+
+.photo {
+	grid-area: photo;
+	width: 255px;
+	text-align: center;
+}
+
+.contacts {
+	grid-area: contacts;
+}
+
+.aboutMe {
+	grid-area: aboutMe;
+}
+
+.skills {
+	border-top: 1px solid #000;
+	grid-area: skills;
+}
+
+.education {
+	border-top: 1px solid #000;
+	grid-area: education; 
+}
+
+
+.myPhoto {
+	border: 1px solid black;
+	border-radius: 125px;
+	width: 250px;
+}
+
+.myName {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 24px;
+}
